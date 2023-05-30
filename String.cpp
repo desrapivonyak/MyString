@@ -6,7 +6,7 @@ String::String() : m_capacity(0), m_buf(nullptr) {};
 
 String::String(const char* c) {
   m_capacity = std::strlen(c) + 1;
-  m_buf = new char[m_capacity + 1];
+  m_buf = new char[m_capacity];
   std::strcpy(m_buf, c);
 }
 
