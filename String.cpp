@@ -11,7 +11,7 @@ String::String(const char* c) {
 }
 
 String::String(const std::string& str) : m_capacity(str.length()) {
-  m_buf = new char[m_capacity + 1];
+  m_buf = new char[m_capacity];
   std::strcpy(m_buf, str.c_str());
 }
 
